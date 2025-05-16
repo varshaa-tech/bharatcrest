@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>BharatCrest</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Add this in your <head> if not already included -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Include this in your <head> or before closing </body> if not already added -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+     <!-- Include this in your <head> or before closing </body> if not already added -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <!-- for slider -->
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <!-- Bootstrap Icons (for arrow icons) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Font Awesome CDN (v4.7 for "fa" classes) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --obsidian: #0a0612;
+            --royal-purple: #1e0d3d;
+            --imperial-gold: #D4AF37;
+            --royal-lavender: #9674FF;
+            --platinum: #E5E4E2;
+            --titanium: #C0C0C0;
+        }
+
+        /* Ultra-Premium Navbar */
+       .navbar {
+    background: #ffffff;
+    padding: 15px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+.navbar-nav .dropdown-menu {
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+.navbar-nav .dropdown-item {
+    font-size: 0.9rem;
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+
+        /* Logo Orb Effect */
+        .logo-orb {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s ease;
+        }
+        
+        .nav-item.active span {
+        display: block;
+        text-align: center;
+        width: 100%;
+}
+
+        .logo-img {
+            width: 54px;
+            height: 54px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            position: relative;
+            z-index: 2;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+
+
+        .logo-orb:hover .logo-img {
+            transform: scale(1.1);
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
+        }
+
+        /* Brand Text */
+        .brand-name {
+            font-weight: 800;
+            letter-spacing: 2px;
+            background: linear-gradient(to right, var(--imperial-gold), var(--royal-lavender), var(--imperial-gold));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            background-size: 200% auto;
+            text-shadow: 0 0 15px rgba(150, 116, 255, 0.3);
+            transition: all 0.5s ease;
+            font-size: 1.5rem;
+        }
+
+        .brand-text:hover .brand-name {
+            background-position: 100% center;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+        }
+
+        /* Navigation Links */
+      
+
+  
+
+        /* Perfect Underline Animation */
+   
+        .nav-item:hover .nav-underline {
+            width: 80%;
+            opacity: 1;
+        }
+
+        .nav-item.active .nav-underline {
+            width: 100%;
+            opacity: 1;
+        }
+        .item{
+  padding: 20px;
+  position: relative;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.item::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: linear-gradient(to right, #f1c40f, #e67e22, #ecf0f1);
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.item:hover::after {
+  width: 90%;
+  box-shadow: 1px 1px 10px;
+}
+
+.active{
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  font-weight: 600;
+  font-size: 22px;
+  text-decoration: none;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.bg-navbar{
+  background: linear-gradient(145deg, #0a0612,#1e0d3d);
+}
+.glass-hamburger {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 10px 12px;
+    transition: background1 0.3s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass-hamburger:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1); /* white icon on dark bg */
+}
+
+
+        .carousel-slide {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Align to the left */
+            padding-left: 10%; /* Add left spacing */
+        }
+
+        .text-container {
+            text-align: center;
+            transform: translateY(-10%);
+        }
+
+        .slide-text {
+            color: #fff;
+            font-weight: 700;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 0.5rem;
+        }
+
+        .slide-subtext {
+            color: #fff;
+            font-weight: 400;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 991.98px) {
+            .luxury-navbar {
+                height: 80px;
+                padding: 0 1rem;
+            }
+
+            .navbar-collapse {
+                background: linear-gradient(145deg, var(--obsidian), var(--royal-purple));
+                padding: 1rem;
+                margin-top: 0.5rem;
+                border-radius: 0 0 15px 15px;
+                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8);
+            }
+
+            .nav-item {
+                margin: 0.5rem 0;
+                padding: 0.5rem 1rem !important;
+            }
+
+            .nav-item span {
+                padding: 0.5rem 0;
+            }
+
+            .nav-underline {
+                bottom: 0;
+                left: 1rem;
+                width: calc(100% - 2rem) !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top bg-navbar ">
+  <div class="container ">
+      <a class="navbar-brand fw-bold text-primary" href="index.html"><img src="img/bharat2.jpg" alt="Logo" class="logo-img"><h4 class="mb-0 brand-name">BHARATCREST</h4><small class="brand-tagline" style="color:whitesmoke;">Digital Transformation Pioneers</small></a>
+    
+  <button id="glass-hamburger" class="glass-hamburger navbar-toggler d-lg-none ms-auto" type="button" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto heading">
+              <li class="item">
+                  <a class="active" href="index.html">Home</a>
+              </li>
+              <li class="item">
+                  <a class="active" href="#about">About</a>
+              </li>
+              <li class="item">
+                  <a class=" active" href="#services">Blogs</a>
+              </li>
+              <li class="item">
+                  <a class="active" href="#projects">Careers</a>
+              </li>
+      </div>
+  </div>
+</nav>
+<!-- -- Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- system hang -->
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Manual Toggle Script -->
+<script>
+  const btn = document.getElementById('glass-hamburger');
+  const target = document.getElementById('navbarNav');
+  let bsCollapse = new bootstrap.Collapse(target, { toggle: false });
+
+  btn.addEventListener('click', function () {
+    if (target.classList.contains('show')) {
+      bsCollapse.hide();
+    } else {
+      bsCollapse.show();
+    }
+  });
+</script>
+
+</body>
+</html>

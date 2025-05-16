@@ -1,0 +1,3751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>BharatCrest</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Add this in your <head> if not already included -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Include this in your <head> or before closing </body> if not already added -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+     <!-- Include this in your <head> or before closing </body> if not already added -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <!-- for slider -->
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <!-- Bootstrap Icons (for arrow icons) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Font Awesome CDN (v4.7 for "fa" classes) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    
+
+
+     <style>
+        :root {
+            --obsidian: #0a0612;
+            --royal-purple: #1e0d3d;
+            --imperial-gold: #D4AF37;
+            --royal-lavender: #9674FF;
+            --platinum: #E5E4E2;
+            --titanium: #C0C0C0;
+        }
+
+        /* Ultra-Premium Navbar */
+       .navbar {
+    background: #ffffff;
+    padding: 15px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+.navbar-nav .dropdown-menu {
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+.navbar-nav .dropdown-item {
+    font-size: 0.9rem;
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+
+        /* Logo Orb Effect */
+        .logo-orb {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s ease;
+        }
+        
+        .nav-item.active span {
+        display: block;
+        text-align: center;
+        width: 100%;
+}
+
+        .logo-img {
+            width: 54px;
+            height: 54px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            position: relative;
+            z-index: 2;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+
+
+        .logo-orb:hover .logo-img {
+            transform: scale(1.1);
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
+        }
+
+        /* Brand Text */
+        .brand-name {
+            font-weight: 800;
+            letter-spacing: 2px;
+            background: linear-gradient(to right, var(--imperial-gold), var(--royal-lavender), var(--imperial-gold));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            background-size: 200% auto;
+            text-shadow: 0 0 15px rgba(150, 116, 255, 0.3);
+            transition: all 0.5s ease;
+            font-size: 1.5rem;
+        }
+
+        .brand-text:hover .brand-name {
+            background-position: 100% center;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+        }
+
+        /* Navigation Links */
+      
+
+  
+
+        /* Perfect Underline Animation */
+   
+        .nav-item:hover .nav-underline {
+            width: 80%;
+            opacity: 1;
+        }
+
+        .nav-item.active .nav-underline {
+            width: 100%;
+            opacity: 1;
+        }
+        .item{
+  padding: 20px;
+  position: relative;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.item::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: linear-gradient(to right, #f1c40f, #e67e22, #ecf0f1);
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.item:hover::after {
+  width: 90%;
+  box-shadow: 1px 1px 10px;
+}
+
+.active{
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  font-weight: 600;
+  font-size: 22px;
+  text-decoration: none;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.bg-navbar{
+  background: linear-gradient(145deg, #0a0612,#1e0d3d);
+}
+.glass-hamburger {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 10px 12px;
+    transition: background1 0.3s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass-hamburger:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1); /* white icon on dark bg */
+}
+
+
+        .carousel-slide {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Align to the left */
+            padding-left: 10%; /* Add left spacing */
+        }
+
+        .text-container {
+            text-align: center;
+            transform: translateY(-10%);
+        }
+
+        .slide-text {
+            color: #fff;
+            font-weight: 700;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 0.5rem;
+        }
+
+        .slide-subtext {
+            color: #fff;
+            font-weight: 400;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 991.98px) {
+            .luxury-navbar {
+                height: 80px;
+                padding: 0 1rem;
+            }
+
+            .navbar-collapse {
+                background: linear-gradient(145deg, var(--obsidian), var(--royal-purple));
+                padding: 1rem;
+                margin-top: 0.5rem;
+                border-radius: 0 0 15px 15px;
+                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8);
+            }
+
+            .nav-item {
+                margin: 0.5rem 0;
+                padding: 0.5rem 1rem !important;
+            }
+
+            .nav-item span {
+                padding: 0.5rem 0;
+            }
+
+            .nav-underline {
+                bottom: 0;
+                left: 1rem;
+                width: calc(100% - 2rem) !important;
+            }
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+     <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top bg-navbar ">
+  <div class="container ">
+    <div>
+       <a class="navbar-brand fw-bold text-primary" href="index.html"><img src="img/bharat2.jpg" alt="Logo" class="logo-img">
+ 
+    </div>
+      <div>
+
+        <h4 class="mb-0 brand-name">BHARATCREST</h4>
+        <small class="brand-tagline" style="color:whitesmoke;">Digital Transformation Pioneers</small>
+    
+    </div>
+</a>
+
+    
+  <button id="glass-hamburger" class="glass-hamburger navbar-toggler d-lg-none ms-auto" type="button" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto heading">
+              <li class="item">
+                  <a class="active" href="index.html">Home</a>
+              </li>
+              <li class="item">
+                  <a class="active" href="about.html">About</a>
+              </li>
+              <li class="item">
+                  <a class=" active" href="service.html">Blogs</a>
+              </li>
+              <li class="item">
+                  <a class="active" href="career.html">Careers</a>
+              </li>
+      </div>
+  </div>
+</nav>
+<!-- -- Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- system hang -->
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Manual Toggle Script -->
+<script>
+  const btn = document.getElementById('glass-hamburger');
+  const target = document.getElementById('navbarNav');
+  let bsCollapse = new bootstrap.Collapse(target, { toggle: false });
+
+  btn.addEventListener('click', function () {
+    if (target.classList.contains('show')) {
+      bsCollapse.hide();
+    } else {
+      bsCollapse.show();
+    }
+  });
+</script>
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Carousel Start -->
+<div class="carousel-container">
+    <div class="premium-carousel">
+        <!-- Slide 1 -->
+        <div class="carousel-slide active" style="background-image: url('img/panel1.jpg')">
+            <div class="text-container">
+                <h1 class="slide-text">BharatCrest</h1><br>
+                <p class="slide-subtext">A tech-based software company<br>specializing in AI-driven solutions<br>and innovative technology.<br>Empowering businesses with<br>cutting-edge applications<br> and intelligent systems.
+            </div>
+
+        </div>
+
+
+        <!-- Slide 2 -->
+        <div class="carousel-slide" style="background-image: url('img/panel2.jpg')">
+            <h2 class="slide-text" style="margin-left: 30%;">Precision. Intelligence. Performance.</h2>
+        </div>
+        <br>
+
+
+        <!-- Slide 3 -->
+        <div class="carousel-slide" style="background-image: url('img/panel3.jpg')">
+            <h2 class="slide-text" style="margin-left: -8%;">Where Ideas Meet<br>Intelligent Execution.</h2>
+        </div>
+    </div>
+</div>
+
+<!-- Navigation Arrows -->
+<button class="carousel-nav prev" aria-label="Previous slide">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6" /></svg>
+</button>
+<button class="carousel-nav next" aria-label="Next slide">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6" /></svg>
+</button>
+
+<!-- Pagination Dots -->
+<div class="carousel-pagination"></div>
+    </div>
+</div>
+
+<style>
+    /* Base Styles */
+    :root {
+        --animation-duration: 1s;
+        --easing: cubic-bezier(0.77, 0, 0.175, 1);
+    }
+
+    .carousel-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        max-height: -webkit-fill-available; /* For mobile browser address bars */
+        overflow: hidden;
+    }
+
+    .premium-carousel {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousel-slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        will-change: transform, opacity;
+    }
+
+        .carousel-slide.active {
+            opacity: 1;
+            z-index: 1;
+        }
+
+    .slide-content {
+        position: absolute;
+        /*bottom: 15%;*/
+
+        left: 10%;
+        max-width: 40%;
+        color: white;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        transform: translateY(30px);
+        opacity: 0;
+        transition: all 0.8s var(--easing) 0.3s;
+        padding: 20px;
+        background: rgba(0,0,0,0.3);
+        border-radius: 10px;
+        backdrop-filter: blur(5px);
+    }
+
+    .active .slide-content {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    /* Navigation Arrows */
+    .carousel-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        background: rgba(255,255,255,0.2);
+        border: none;
+        border-radius: 50%;
+        color: white;
+        cursor: pointer;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(5px);
+        transition: all 0.3s ease;
+        opacity: 0.7;
+    }
+
+        .carousel-nav:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-50%) scale(1.1);
+            opacity: 1;
+        }
+
+        .carousel-nav.prev {
+            left: 20px;
+        }
+
+        .carousel-nav.next {
+            right: 20px;
+        }
+
+        .carousel-nav svg {
+            width: 20px;
+            height: 20px;
+        }
+
+    /* Pagination Dots */
+    .carousel-pagination {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+        z-index: 10;
+    }
+
+        .carousel-pagination .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+            .carousel-pagination .dot.active {
+                background: white;
+                transform: scale(1.2);
+            }
+
+    /* Animation Classes */
+    .slide-in-right {
+        animation: slideInRight var(--animation-duration) var(--easing) forwards;
+    }
+
+    .slide-in-left {
+        animation: slideInLeft var(--animation-duration) var(--easing) forwards;
+    }
+
+    .fade-in {
+        animation: fadeIn var(--animation-duration) var(--easing) forwards;
+    }
+
+    .zoom-in {
+        animation: zoomIn var(--animation-duration) var(--easing) forwards;
+    }
+
+    .rotate-in {
+        animation: rotateIn var(--animation-duration) var(--easing) forwards;
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            transform: scale(0.8);
+            opacity: 0;
+        }
+
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    @keyframes rotateIn {
+        from {
+            transform: rotate(-15deg) scale(0.8);
+            opacity: 0;
+        }
+
+        to {
+            transform: rotate(0) scale(1);
+            opacity: 1;
+        }
+    }
+
+    /* Mobile Responsive Styles */
+    @media (max-width: 768px) {
+        .carousel-container {
+            height: 70vh; /* Smaller height on mobile */
+            
+        }
+
+        .slide-content {
+            max-width: 80%;
+            left: 5%;
+            bottom: 10%;
+            padding: 15px;
+        }
+
+        .carousel-nav {
+            width: 40px;
+            height: 40px;
+            opacity: 0.9;
+            margin-right: 200px;
+        }
+
+            .carousel-nav svg {
+                width: 16px;
+                height: 16px;
+            }
+
+        .carousel-pagination {
+            bottom: 15px;
+        }
+
+            .carousel-pagination .dot {
+                width: 8px;
+                height: 8px;
+            }
+    }
+
+    @media (max-width: 480px) {
+        .carousel-container {
+            height: 60vh; /* Even smaller for very small devices */
+        }
+
+        .slide-content {
+            max-width: 90%;
+            left: 5%;
+            bottom: 5%;
+            padding: 10px;
+        }
+
+        .carousel-nav {
+            width: 35px;
+            height: 35px;
+        }
+
+            .carousel-nav.prev {
+                left: 10px;
+            }
+
+            .carousel-nav.next {
+                right: 10px;
+            }
+
+        .slide-title {
+            font-size: 1.2rem;
+        }
+
+        .slide-description {
+            font-size: 0.9rem;
+        }
+    }
+
+    /* Orientation-specific adjustments */
+    @media (max-height: 500px) and (orientation: landscape) {
+        .carousel-container {
+            height: 100vh;
+        }
+
+        .slide-content {
+            max-width: 50%;
+        }
+    }
+
+    /* Prevent awkward scaling on very small devices */
+    @media (max-width: 320px) {
+        .slide-title {
+            font-size: 1rem;
+        }
+
+        .slide-description {
+            font-size: 0.8rem;
+        }
+    }
+</style>
+<script>
+    const slides = document.querySelectorAll(".carousel-slide");
+    const dotsContainer = document.querySelector(".carousel-pagination");
+    const delay = 2500; // 2.5 seconds
+    let currentSlide = 0;
+    let interval;
+
+    // Create pagination dots
+    slides.forEach((_, index) => {
+        const dot = document.createElement("div");
+        dot.classList.add("dot");
+        if (index === 0) dot.classList.add("active");
+        dot.addEventListener("click", () => goToSlide(index));
+        dotsContainer.appendChild(dot);
+    });
+
+    const dots = document.querySelectorAll(".carousel-pagination .dot");
+
+    function goToSlide(index) {
+        slides[currentSlide].classList.remove("active");
+        dots[currentSlide].classList.remove("active");
+
+        currentSlide = index;
+
+        slides[currentSlide].classList.add("active");
+        dots[currentSlide].classList.add("active");
+    }
+
+    function nextSlide() {
+        let nextIndex = (currentSlide + 1) % slides.length;
+        goToSlide(nextIndex);
+    }
+
+    // Auto slide
+    function startAutoSlide() {
+        interval = setInterval(nextSlide, delay);
+    }
+
+    function stopAutoSlide() {
+        clearInterval(interval);
+    }
+
+    // Arrow nav buttons
+    document.querySelector(".carousel-nav.next").addEventListener("click", () => {
+        stopAutoSlide();
+        nextSlide();
+        startAutoSlide();
+    });
+
+    document.querySelector(".carousel-nav.prev").addEventListener("click", () => {
+        stopAutoSlide();
+        let prevIndex = (currentSlide - 1 + slides.length) % slides.length;
+        goToSlide(prevIndex);
+        startAutoSlide();
+    });
+
+    startAutoSlide();
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const carousel = document.querySelector('.premium-carousel');
+        const slides = document.querySelectorAll('.carousel-slide');
+        const prevBtn = document.querySelector('.carousel-nav.prev');
+        const nextBtn = document.querySelector('.carousel-nav.next');
+        const pagination = document.querySelector('.carousel-pagination');
+        let currentIndex = 0;
+        const animationTypes = ['slide-in-right', 'slide-in-left', 'fade-in', 'zoom-in', 'rotate-in'];
+        let autoPlay;
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        // Create pagination dots
+        function initPagination() {
+            pagination.innerHTML = '';
+            slides.forEach((_, index) => {
+                const dot = document.createElement('div');
+                dot.classList.add('dot');
+                if (index === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => goToSlide(index));
+                pagination.appendChild(dot);
+            });
+        }
+
+        initPagination();
+        const dots = document.querySelectorAll('.carousel-pagination .dot');
+
+        // Navigation functions
+        function goToSlide(index) {
+            if (index < 0) index = slides.length - 1;
+            if (index >= slides.length) index = 0;
+
+            // Skip if already on this slide
+            if (index === currentIndex) return;
+
+            const direction = index > currentIndex ? 'next' : 'prev';
+            const currentSlide = slides[currentIndex];
+            const nextSlide = slides[index];
+            const randomAnimation = animationTypes[Math.floor(Math.random() * animationTypes.length)];
+
+            // Update classes
+            currentSlide.classList.remove('active');
+            nextSlide.classList.add('active', randomAnimation);
+
+            // Reset animation after it completes
+            setTimeout(() => {
+                nextSlide.classList.remove(randomAnimation);
+            }, 1000);
+
+            // Update pagination
+            dots[currentIndex].classList.remove('active');
+            dots[index].classList.add('active');
+
+            currentIndex = index;
+            resetAutoplay();
+        }
+
+        function nextSlide() {
+            goToSlide(currentIndex + 1);
+        }
+
+        function prevSlide() {
+            goToSlide(currentIndex - 1);
+        }
+
+        function startAutoplay() {
+            autoPlay = setInterval(nextSlide, 5000);
+        }
+
+        function resetAutoplay() {
+            clearInterval(autoPlay);
+            startAutoplay();
+        }
+
+        // Event listeners
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+
+        // Start autoplay
+        startAutoplay();
+
+        // Pause on hover
+        carousel.addEventListener('mouseenter', () => clearInterval(autoPlay));
+        carousel.addEventListener('mouseleave', startAutoplay);
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+
+        // Touch support for mobile
+        carousel.addEventListener('touchstart', (e) => {
+            clearInterval(autoPlay);
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        carousel.addEventListener('touchmove', (e) => {
+            e.preventDefault(); // Prevent scrolling while swiping
+        }, { passive: false });
+
+        carousel.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+            startAutoplay();
+        }, { passive: true });
+
+        function handleSwipe() {
+            const threshold = 50; // Minimum swipe distance
+            const difference = touchStartX - touchEndX;
+
+            if (difference > threshold) {
+                nextSlide(); // Swipe left
+            } else if (difference < -threshold) {
+                prevSlide(); // Swipe right
+            }
+        }
+
+        // Handle window resize
+        window.addEventListener('resize', function () {
+            // Recalculate anything if needed
+        });
+
+        // Handle mobile viewport height changes (iOS specifically)
+        function handleViewportHeight() {
+            const vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+
+        handleViewportHeight();
+        window.addEventListener('resize', handleViewportHeight);
+        window.addEventListener('orientationchange', handleViewportHeight);
+    });
+</script>
+
+<!-- Carousel End -->
+<!-- Carousel Start -->
+<!-- Luxury Counter Section -->
+<div class="container-fluid p-0 pb-5 counter-section">
+    <div class="container py-5">
+        <div class="row text-center">
+            <!-- Column 1: Hours of Experience -->
+            <div class="col-md-3 mb-4 mb-md-0">
+                <div class="counter-card">
+                    <div class="counter-value">
+                        <span data-toggle="counter-up">100042</span><span>+</span>
+                    </div>
+                    <p class="counter-label">Hours of Experience</p>
+                    <div class="counter-hover-effect"></div>
+                </div>
+            </div>
+
+            <!-- Column 2: Repeated Clients -->
+            <div class="col-md-3 mb-4 mb-md-0">
+                <div class="counter-card">
+                    <div class="counter-value">
+                        <span data-toggle="counter-up">95</span><span>%</span>
+                    </div>
+                    <p class="counter-label">Repeated Clients</p>
+                    <div class="counter-hover-effect"></div>
+                </div>
+            </div>
+
+            <!-- Column 3: Services Delivered -->
+            <div class="col-md-3 mb-4 mb-md-0">
+                <div class="counter-card">
+                    <div class="counter-value">
+                        <span data-toggle="counter-up">25</span><span>+</span>
+                    </div>
+                    <p class="counter-label">Services Delivered</p>
+                    <div class="counter-hover-effect"></div>
+                </div>
+            </div>
+
+            <!-- Column 4: Stocks Traded -->
+            <div class="col-md-3">
+                <div class="counter-card">
+                    <div class="counter-value">
+                        <span data-toggle="counter-up">100</span><span>+</span>
+                    </div>
+                    <p class="counter-label">Stocks Traded</p>
+                    <div class="counter-hover-effect"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Luxury Counter Section Styling */
+    .counter-section {
+        background: linear-gradient(135deg, #0a0a0a 0%, #00162b 100%);
+        position: relative;
+        overflow: hidden;
+    }
+
+        .counter-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 30%, rgba(168, 123, 255, 0.03) 0%, transparent 25%), radial-gradient(circle at 80% 70%, rgba(212, 175, 55, 0.03) 0%, transparent 25%);
+            background-size: 200% 200%;
+            z-index: 0;
+            animation: silkShimmer 15s infinite alternate;
+        }
+
+    .counter-card {
+        background: rgba(15, 25, 40, 0.7);
+        border: 1px solid rgba(212, 175, 55, 0.1);
+        border-radius: 12px;
+        padding: 30px 20px;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        z-index: 1;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+        .counter-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(168, 123, 255, 0.2);
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+
+    .counter-value {
+        font-size: 42px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        background: linear-gradient(to right, #d4af37, #a87bff, #d4af37);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        background-size: 200% auto;
+        transition: background-position 0.5s ease;
+    }
+
+    .counter-card:hover .counter-value {
+        background-position: 100% center;
+    }
+
+    .counter-label {
+        color: #b0b8c5;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        margin-bottom: 0;
+        transition: all 0.3s ease;
+    }
+
+    .counter-card:hover .counter-label {
+        color: #ffffff;
+    }
+
+    .counter-hover-effect {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient( 135deg, rgba(212, 175, 55, 0) 0%, rgba(212, 175, 55, 0) 40%, rgba(168, 123, 255, 0.1) 50%, rgba(212, 175, 55, 0) 60%, rgba(212, 175, 55, 0) 100% );
+        background-size: 300% 300%;
+        z-index: -1;
+        opacity: 0;
+        transition: all 0.7s ease;
+    }
+
+    .counter-card:hover .counter-hover-effect {
+        opacity: 1;
+        background-position: 100% 100%;
+    }
+
+    @keyframes silkShimmer {
+        0% {
+            background-position: 0% 0%;
+        }
+
+        100% {
+            background-position: 100% 100%;
+        }
+    }
+</style>
+<!-- Full-width Luxury Expertise Section -->
+<div class="container-fluid p-0 expertise-section position-relative overflow-hidden">
+    <!-- Animated Stars Background -->
+    <div class="starfield">
+        <div class="stars"></div>
+        <div class="stars"></div>
+        <div class="stars"></div>
+    </div>
+
+    <div class="container-xxl py-5 position-relative">
+        <div class="section-title text-center">
+            <h1 class="display-5 mb-5">
+                <span class="luxury-gradient-text">Our Expertise</span>
+            </h1>
+            <div class="luxury-divider"></div>
+        </div>
+        <div class="row g-4 portfolio-container">
+            <!-- AI Solutions -->
+            <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp" data-wow-delay="0.1s">
+                <div class="expertise-card">
+                    <div class="expertise-img-container">
+                        <img src="img/ai2.jpg" alt="AI Solutions">
+                        <div class="expertise-overlay">
+                            <div class="expertise-content">
+                                <h3>AI Solutions</h3>
+                                <div class="expertise-buttons">
+                                    <a class="btn btn-square" href="img/project1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-square" href="aipage.html"><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="color-wave"></div>
+                    </div>
+                    <div class="expertise-info">
+                        <p class="expertise-category">Artificial Intelligence</p>
+                        <h5 class="expertise-title">Advanced AI Solutions & Implementations</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fullstack Development -->
+            <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp" data-wow-delay="0.3s">
+                <div class="expertise-card">
+                    <div class="expertise-img-container">
+                        <img src="img/fullstack.jpg" alt="Fullstack Development">
+                        <div class="expertise-overlay">
+                            <div class="expertise-content">
+                                <h3>Fullstack Development</h3>
+                                <div class="expertise-buttons">
+                                    <a class="btn btn-square" href="img/project2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-square" href="fullstack.html"><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="color-wave"></div>
+                    </div>
+                    <div class="expertise-info">
+                        <p class="expertise-category">Web Development</p>
+                        <h5 class="expertise-title">End-to-End Web Solutions</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ERP Solutions -->
+            <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp" data-wow-delay="0.5s">
+                <div class="expertise-card">
+                    <div class="expertise-img-container">
+                        <img src="img/erp.jpg" alt="ERP Solutions">
+                        <div class="expertise-overlay">
+                            <div class="expertise-content">
+                                <h3>ERP Solutions</h3>
+                                <div class="expertise-buttons">
+                                    <a class="btn btn-square" href="img/project3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-square" href="erp.html"><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="color-wave"></div>
+                    </div>
+                    <div class="expertise-info">
+                        <p class="expertise-category">Enterprise Solutions</p>
+                        <h5 class="expertise-title">Business Process Optimization</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trading -->
+            <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp" data-wow-delay="0.1s">
+                <div class="expertise-card">
+                    <div class="expertise-img-container">
+                        <img src="img/trading.jpg" alt="Trading Solutions">
+                        <div class="expertise-overlay">
+                            <div class="expertise-content">
+                                <h3>Trading Solutions</h3>
+                                <div class="expertise-buttons">
+                                    <a class="btn btn-square" href="img/project4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-square" href="trading.html"><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="color-wave"></div>
+                    </div>
+                    <div class="expertise-info">
+                        <p class="expertise-category">Financial Services</p>
+                        <h5 class="expertise-title">Market Analysis & Trading Systems</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Consultation -->
+            <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp" data-wow-delay="0.3s">
+                <div class="expertise-card">
+                    <div class="expertise-img-container">
+                        <img src="img/consultation.jpg" alt="Consultation Services">
+                        <div class="expertise-overlay">
+                            <div class="expertise-content">
+                                <h3>Consultation Services</h3>
+                                <div class="expertise-buttons">
+                                    <a class="btn btn-square" href="img/project5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-square" href="free.html"><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="color-wave"></div>
+                    </div>
+                    <div class="expertise-info">
+                        <p class="expertise-category">Professional Services</p>
+                        <h5 class="expertise-title">Strategic Business Consultation</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products -->
+            <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp" data-wow-delay="0.5s">
+                <div class="expertise-card">
+                    <div class="expertise-img-container">
+                        <img src="img/products.jpg" alt="Product Development">
+                        <div class="expertise-overlay">
+                            <div class="expertise-content">
+                                <h3>Product Development</h3>
+                                <div class="expertise-buttons">
+                                    <a class="btn btn-square" href="img/project6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-square" href=""><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="color-wave"></div>
+                    </div>
+                    <div class="expertise-info">
+                        <p class="expertise-category">Innovation</p>
+                        <h5 class="expertise-title">Cutting-Edge Product Solutions</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Full-width Luxury Background */
+    .expertise-section {
+        background: linear-gradient(135deg, #0a0a0a 0%, #00162b 100%);
+        min-height: 100vh;
+        padding: 80px 0;
+    }
+
+    /* Animated Stars (same as previous implementation) */
+    .starfield {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        overflow: hidden;
+    }
+
+    .stars {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+    }
+
+        .stars:before {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            box-shadow: 5vw 10vh 2px 1px white, 15vw 25vh 2px 1px white, 25vw 5vh 2px 1px white, 35vw 30vh 2px 1px white, 45vw 15vh 2px 1px white, 55vw 25vh 2px 1px white, 65vw 5vh 2px 1px white, 75vw 35vh 2px 1px white, 85vw 20vh 2px 1px white, 95vw 10vh 2px 1px white, 10vw 40vh 2px 1px white, 20vw 45vh 2px 1px white, 30vw 50vh 2px 1px white, 40vw 55vh 2px 1px white, 50vw 60vh 2px 1px white, 60vw 65vh 2px 1px white, 70vw 70vh 2px 1px white, 80vw 75vh 2px 1px white, 90vw 80vh 2px 1px white, 5vw 85vh 2px 1px white, 15vw 90vh 2px 1px white, 25vw 95vh 2px 1px white, 35vw 100vh 2px 1px white, 45vw 105vh 2px 1px white, 55vw 110vh 2px 1px white, 65vw 115vh 2px 1px white, 75vw 120vh 2px 1px white, 85vw 125vh 2px 1px white, 95vw 130vh 2px 1px white, 10vw 135vh 2px 1px white, 20vw 140vh 2px 1px white, 30vw 145vh 2px 1px white, 40vw 150vh 2px 1px white, 50vw 155vh 2px 1px white, 60vw 160vh 2px 1px white, 70vw 165vh 2px 1px white, 80vw 170vh 2px 1px white, 90vw 175vh 2px 1px white, 5vw 180vh 2px 1px white, 15vw 185vh 2px 1px white, 25vw 190vh 2px 1px white, 35vw 195vh 2px 1px white, 45vw 200vh 2px 1px white, 55vw 205vh 2px 1px white, 65vw 210vh 2px 1px white, 75vw 215vh 2px 1px white, 85vw 220vh 2px 1px white, 95vw 225vh 2px 1px white, 10vw 230vh 2px 1px white, 20vw 235vh 2px 1px white, 30vw 240vh 2px 1px white, 40vw 245vh 2px 1px white, 50vw 250vh 2px 1px white, 60vw 255vh 2px 1px white, 70vw 260vh 2px 1px white, 80vw 265vh 2px 1px white, 90vw 270vh 2px 1px white;
+            animation: twinkle 3s infinite, moveStars 20s linear infinite;
+        }
+
+    /* Luxury Golden-Lavender Text */
+    .luxury-gradient-text {
+        background: linear-gradient(135deg, #D4AF37 0%, #A87BFF 50%, #D4AF37 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 0 0 15px rgba(168, 123, 255, 0.3);
+        font-weight: 700;
+        letter-spacing: 1px;
+        background-size: 200% auto;
+        animation: gradientShift 5s ease infinite;
+    }
+
+    .luxury-divider {
+        width: 150px;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, #D4AF37, #A87BFF, transparent);
+        margin: 1.5rem auto;
+        border-radius: 3px;
+    }
+
+    @keyframes gradientShift {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    /* Expertise Cards (same luxurious styling as before) */
+    .expertise-card {
+        background: rgba(15, 25, 40, 0.7);
+        border: 1px solid rgba(212, 175, 55, 0.1);
+        border-radius: 12px;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        height: 100%;
+    }
+
+        .expertise-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(168, 123, 255, 0.2);
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+
+    .expertise-img-container {
+        position: relative;
+        height: 280px;
+        overflow: hidden;
+    }
+
+        .expertise-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.5s ease;
+        }
+
+    .expertise-card:hover .expertise-img-container img {
+        transform: scale(1.05);
+    }
+
+    .expertise-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        transition: all 0.5s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .expertise-card:hover .expertise-overlay {
+        opacity: 1;
+    }
+
+    .expertise-content h3 {
+        color: white;
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .expertise-buttons .btn {
+        background: rgba(212, 175, 55, 0.7);
+        color: white;
+        margin: 0 5px;
+        transition: all 0.3s ease;
+    }
+
+        .expertise-buttons .btn:hover {
+            background: #a87bff;
+            transform: translateY(-3px);
+        }
+
+    .color-wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, #d4af37, #a87bff, #d4af37);
+        background-size: 200% auto;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 0.5s ease;
+    }
+
+    .expertise-card:hover .color-wave {
+        transform: scaleX(1);
+        background-position: 100% center;
+    }
+
+    .expertise-info {
+        padding: 20px;
+        background: rgba(10, 20, 35, 0.8);
+    }
+
+    .expertise-category {
+        color: #a87bff;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .expertise-title {
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+
+    /* Ensure content stays above stars */
+    .container-xxl {
+        position: relative;
+        z-index: 1;
+    }
+
+    @media (max-width: 768px) {
+        /* Fix for "Our Expertise" heading */
+        .section-title h1.display-5 {
+            font-size: 2.5rem !important;
+            line-height: 1.2 !important;
+            margin-bottom: 1.5rem !important;
+        }
+
+        .luxury-gradient-text {
+            background-size: 150% auto !important;
+            -webkit-text-stroke: 0.5px rgba(212, 175, 55, 0.5) !important;
+        }
+
+        .luxury-divider {
+            width: 100px !important;
+            margin: 1rem auto !important;
+        }
+
+        /* Protection for other elements */
+        .expertise-section {
+            padding: 40px 0 !important;
+        }
+
+        .expertise-img-container {
+            height: 200px !important;
+        }
+    }
+</style>
+<!-- Optional CSS for image sizing -->
+<style>
+    .card-img-top {
+        height: 35vh;
+        object-fit: cover;
+    }
+
+    .card-body {
+        padding: 10px;
+        font-weight: bold;
+    }
+</style>
+
+
+<!-- jQuery and Owl Carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+<!-- About End -->
+<!-- Service Start -->
+<!-- Service End -->
+<div class="luxury-clients-section">
+    <div class="luxury-background">
+        <div class="shimmer-effect"></div>
+    </div>
+
+    <div class="stars-container">
+        <div class="stars"></div>
+        <div class="stars"></div>
+        <div class="stars"></div>
+        <div class="stars"></div>
+
+        <!-- Add as many as you want -->
+    </div>
+    <div class="container">
+        <div class="section-header">
+            <div class="header-ornament left"></div>
+            <h2 class="section-title">
+                <span class="luxury-subtitle">OUR ESTEEMED</span>
+                <span class="luxury-maintitle">CLIENTS</span>
+            </h2>
+            <div class="header-ornament right"></div>
+        </div>
+
+        <div class="section-subtitle">
+            <p>Trusted by industry leaders and innovators worldwide</p>
+        </div>
+
+        <div id="clientCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="luxury-logo-container">
+                                <div class="luxury-logo-frame">
+                                    <img src="img/solution.jpg" class="luxury-logo" alt="Solution Center">
+                                    <div class="logo-overlay"></div>
+                                </div>
+                                <p class="company-name">Solution Center</p>
+                                <p class="company-sector">Technology Solutions</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="luxury-logo-container">
+                                <div class="luxury-logo-frame">
+                                    <img src="img/optimaxin.jpg" class="luxury-logo" alt="Optimaxin">
+                                    <div class="logo-overlay"></div>
+                                </div>
+                                <p class="company-name">Optimaxin</p>
+                                <p class="company-sector">Business Optimization</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="luxury-logo-container">
+                                <div class="luxury-logo-frame">
+                                    <img src="img/truerealtor.jpg" class="luxury-logo" alt="True Realtor">
+                                    <div class="logo-overlay"></div>
+                                </div>
+                                <p class="company-name">True Realtor</p>
+                                <p class="company-sector">Real Estate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="luxury-logo-container">
+                                <div class="luxury-logo-frame">
+                                    <img src="img/finex.jpg" class="luxury-logo" alt="Finex">
+                                    <div class="logo-overlay"></div>
+                                </div>
+                                <p class="company-name">Finex</p>
+                                <p class="company-sector">Financial Services</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="luxury-logo-container">
+                                <div class="luxury-logo-frame">
+                                    <img src="img/branding.jpg" class="luxury-logo" alt="Branding">
+                                    <div class="logo-overlay"></div>
+                                </div>
+                                <p class="company-name">Branding</p>
+                                <p class="company-sector">Creative Agency</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="luxury-logo-container">
+                                <div class="luxury-logo-frame">
+                                    <img src="img/house.jpg" class="luxury-logo" alt="HouseMonk">
+                                    <div class="logo-overlay"></div>
+                                </div>
+                                <p class="company-name">HouseMonk</p>
+                                <p class="company-sector">Property Management</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#clientCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#clientCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <div class="luxury-testimonial">
+            <div class="quote-icon">"</div>
+            <p class="quote-text">Working with these industry leaders has been an honor and privilege. Their trust in our services drives us to continually exceed expectations.</p>
+            <div class="quote-author">— Our Team</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const myCarouselElement = document.querySelector('#clientCarousel');
+
+    const carousel = new bootstrap.Carousel(myCarouselElement, {
+        interval: 2000, // Auto-slide every 2.5 seconds
+        ride: 'carousel' // Starts automatically
+    });
+</script>
+
+
+<style>
+    .luxury-clients-section {
+        position: relative;
+        padding: 8rem 0;
+        overflow: hidden;
+    }
+
+    .luxury-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #0a0a2a 0%, #1a093a 50%, #2a0428 100%);
+        z-index: -1;
+    }
+
+    .shimmer-effect {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient( 90deg, rgba(255,255,255,0) 0%, rgba(147, 112, 219, 0.05) 50%, rgba(255,255,255,0) 100% );
+        animation: shimmer 8s infinite linear;
+        transform: skewX(-20deg);
+    }
+
+    @keyframes shimmer {
+        0% {
+            transform: translateX(-100%) skewX(-20deg);
+        }
+
+        100% {
+            transform: translateX(100%) skewX(-20deg);
+        }
+    }
+
+    .section-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+        position: relative;
+    }
+
+    .header-ornament {
+        width: 120px;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.5), transparent);
+        margin: 0 2rem;
+        position: relative;
+    }
+
+        .header-ornament.left::before,
+        .header-ornament.right::before {
+            content: '✦';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #D4AF37;
+            font-size: 1.2rem;
+        }
+
+        .header-ornament.left::before {
+            left: 0;
+        }
+
+        .header-ornament.right::before {
+            right: 0;
+        }
+
+    .section-title {
+        font-family: 'Playfair Display', serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .luxury-subtitle {
+        color: rgba(212, 175, 55, 0.9);
+        font-size: 1.5rem;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+    }
+
+    .luxury-maintitle {
+        font-size: 3rem;
+        font-weight: 500;
+        letter-spacing: 2px;
+        background: linear-gradient(to right, #D4AF37, #FFFFFF, #D4AF37);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        background-size: 200% auto;
+        animation: textShine 3s linear infinite;
+        text-transform: uppercase;
+    }
+
+    @keyframes textShine {
+        to {
+            background-position: 200% center;
+        }
+    }
+
+    .section-subtitle {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+        .section-subtitle p {
+            color: rgba(255,255,255,0.8);
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            font-weight: 300;
+        }
+
+    .luxury-logo-container {
+        text-align: center;
+        margin-bottom: 3rem;
+        padding: 0 15px;
+    }
+
+    .luxury-logo-frame {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        padding: 3px;
+        background: linear-gradient(145deg, #D4AF37, #A87BFF, #D4AF37);
+        margin: 0 auto 1.5rem;
+        position: relative;
+        box-shadow: 0 0 20px rgba(168, 123, 255, 0.3);
+    }
+
+    .luxury-logo {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #1a1a1a;
+    }
+
+    .logo-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: linear-gradient(135deg, rgba(147, 112, 219, 0.2), transparent);
+    }
+
+    .company-name {
+        font-size: 1.4rem;
+        color: #D4AF37;
+        margin-top: 1rem;
+        font-weight: 500;
+    }
+
+    .company-sector {
+        font-size: 1rem;
+        color: rgba(255,255,255,0.7);
+        margin-top: 0.5rem;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 5%;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: rgba(212, 175, 55, 0.7);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-size: 1.5rem;
+    }
+
+    .luxury-testimonial {
+        max-width: 700px;
+        margin: 5rem auto 0;
+        text-align: center;
+        position: relative;
+    }
+
+    .quote-icon {
+        font-size: 5rem;
+        color: rgba(212, 175, 55, 0.2);
+        line-height: 1;
+        margin-bottom: -2.5rem;
+    }
+
+    .quote-text {
+        color: rgba(255,255,255,0.9);
+        font-size: 1.3rem;
+        line-height: 1.8;
+        font-style: italic;
+        margin-bottom: 1.5rem;
+    }
+
+    .quote-author {
+        color: #D4AF37;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+
+    @media (max-width: 992px) {
+        .luxury-maintitle {
+            font-size: 2.5rem;
+        }
+
+        .luxury-subtitle {
+            font-size: 1.2rem;
+        }
+
+        .luxury-logo-frame {
+            width: 160px;
+            height: 160px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .luxury-clients-section {
+            padding: 6rem 0;
+        }
+
+        .luxury-maintitle {
+            font-size: 2rem;
+        }
+
+        .header-ornament {
+            width: 80px;
+            margin: 0 1.5rem;
+        }
+
+        .luxury-logo-frame {
+            width: 140px;
+            height: 140px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .luxury-maintitle {
+            font-size: 1.8rem;
+        }
+
+        .luxury-subtitle {
+            font-size: 1rem;
+            letter-spacing: 2px;
+        }
+
+        .header-ornament {
+            width: 40px;
+        }
+    }
+</style>
+
+
+<!-- Feature End -->
+<!-- Luxury Projects Section -->
+<div class="container-fluid p-0 projects-section position-relative overflow-hidden">
+    <!-- Animated Stars Background -->
+    <div class="starfield">
+        <div class="stars"></div>
+        <div class="stars"></div>
+        <div class="stars"></div>
+    </div>
+
+    <!-- Wine Texture Overlay -->
+    <div class="wine-texture-overlay"></div>
+
+    <div class="container-xxl py-5 position-relative">
+        <div class="section-title text-center">
+            <h1 class="display-3 mb-5">
+                <span class="luxury-title">Our Projects</span>
+            </h1>
+            <div class="luxury-divider"></div>
+        </div>
+
+
+
+        <div class="row g-4 portfolio-container">
+            <!-- Project 1 -->
+            <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                <div class="luxury-project-card">
+                    <div class="project-img-container">
+                        <img class="img-fluid" src="img/project1.jpg" alt="">
+                        <div class="project-overlay">
+                            <div class="project-content">
+                                <a class="btn btn-square" href="img/project1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-square" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="color-wave"></div>
+                    </div>
+                    <div class="project-info">
+                        <p class="project-category">RAG Approach</p>
+                        <h5 class="project-title">Uses Langchain Model for Retrieval-Augmented Generation</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
+                <div class="luxury-project-card">
+                    <div class="project-img-container">
+                        <img class="img-fluid" src="img/project2.jpg" alt="">
+                        <div class="project-overlay">
+                            <div class="project-content">
+                                <a class="btn btn-square" href="img/project2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-square" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="color-wave"></div>
+                    </div>
+                    <div class="project-info">
+                        <p class="project-category">Repository & Retrival </p>
+                        <h5 class="project-title">Creating & Accessing Largely Popular Using Modern Approach</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
+                <div class="luxury-project-card">
+                    <div class="project-img-container">
+                        <img class="img-fluid" src="img/project3.jpg" alt="">
+                        <div class="project-overlay">
+                            <div class="project-content">
+                                <a class="btn btn-square" href="img/project3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-square" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="color-wave"></div>
+                    </div>
+                    <div class="project-info">
+                        <p class="project-category">Everything You Need One Click Away</p>
+                        <h5 class="project-title">Cooks, Carpenters, Butlers hire them when you need</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
+                <div class="luxury-project-card">
+                    <div class="project-img-container">
+                        <img class="img-fluid" src="img/project4.jpg" alt="">
+                        <div class="project-overlay">
+                            <div class="project-content">
+                                <a class="btn btn-square" href="img/project4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-square" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="color-wave"></div>
+                    </div>
+                    <div class="project-info">
+                        <p class="project-category">Vanilla LLM</p>
+                        <h5 class="project-title">Real Time Highly Precisioned Voice Controlled AI Assistants </h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
+                <div class="luxury-project-card">
+                    <div class="project-img-container">
+                        <img class="img-fluid" src="img/project5.jpg" alt="">
+                        <div class="project-overlay">
+                            <div class="project-content">
+                                <a class="btn btn-square" href="img/project5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-square" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="color-wave"></div>
+                    </div>
+                    <div class="project-info">
+                        <p class="project-category">Automating the Conventional Databases</p>
+                        <h5 class="project-title">Using Generative AI Approach For Fetching PostgreSQL </h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
+                <div class="luxury-project-card">
+                    <div class="project-img-container">
+                        <img class="img-fluid" src="img/project6.jpg" alt="">
+                        <div class="project-overlay">
+                            <div class="project-content">
+                                <a class="btn btn-square" href="img/project6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-square" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="color-wave"></div>
+                    </div>
+                    <div class="project-info">
+                        <p class="project-category">Convolving All Domains </p>
+                        <h5 class="project-title">Image Extraction, Sound Recognition & LlAMA Models </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Luxury Background */
+    .projects-section {
+        background: linear-gradient(135deg, #1a0a2a 0%, #2d0a3d 100%);
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Wine Texture Overlay */
+    .wine-texture-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle at 20% 30%, rgba(86, 11, 173, 0.1) 0%, transparent 25%), radial-gradient(circle at 80% 70%, rgba(134, 21, 204, 0.1) 0%, transparent 25%);
+        background-size: 200% 200%;
+        opacity: 0.5;
+        z-index: 0;
+        animation: silkShimmer 15s infinite alternate;
+    }
+
+    @keyframes silkShimmer {
+        0% {
+            background-position: 0% 0%;
+        }
+
+        100% {
+            background-position: 100% 100%;
+        }
+    }
+
+    /* Animated Stars */
+    .starfield {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        overflow: hidden;
+    }
+
+    .stars {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+    }
+
+        .stars:before {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            box-shadow: 5vw 10vh 2px 1px white, 15vw 25vh 2px 1px white, 25vw 5vh 2px 1px white, 35vw 30vh 2px 1px white, 45vw 15vh 2px 1px white, 55vw 25vh 2px 1px white, 65vw 5vh 2px 1px white, 75vw 35vh 2px 1px white, 85vw 20vh 2px 1px white, 95vw 10vh 2px 1px white, 10vw 40vh 2px 1px white, 20vw 45vh 2px 1px white, 30vw 50vh 2px 1px white, 40vw 55vh 2px 1px white, 50vw 60vh 2px 1px white, 60vw 65vh 2px 1px white, 70vw 70vh 2px 1px white, 80vw 75vh 2px 1px white, 90vw 80vh 2px 1px white, 5vw 85vh 2px 1px white, 15vw 90vh 2px 1px white, 25vw 95vh 2px 1px white, 35vw 100vh 2px 1px white, 45vw 105vh 2px 1px white, 55vw 110vh 2px 1px white, 65vw 115vh 2px 1px white, 75vw 120vh 2px 1px white, 85vw 125vh 2px 1px white, 95vw 130vh 2px 1px white, 10vw 135vh 2px 1px white, 20vw 140vh 2px 1px white, 30vw 145vh 2px 1px white, 40vw 150vh 2px 1px white, 50vw 155vh 2px 1px white, 60vw 160vh 2px 1px white, 70vw 165vh 2px 1px white, 80vw 170vh 2px 1px white, 90vw 175vh 2px 1px white, 5vw 180vh 2px 1px white, 15vw 185vh 2px 1px white, 25vw 190vh 2px 1px white, 35vw 195vh 2px 1px white, 45vw 200vh 2px 1px white, 55vw 205vh 2px 1px white, 65vw 210vh 2px 1px white, 75vw 215vh 2px 1px white, 85vw 220vh 2px 1px white, 95vw 225vh 2px 1px white, 10vw 230vh 2px 1px white, 20vw 235vh 2px 1px white, 30vw 240vh 2px 1px white, 40vw 245vh 2px 1px white, 50vw 250vh 2px 1px white, 60vw 255vh 2px 1px white, 70vw 260vh 2px 1px white, 80vw 265vh 2px 1px white, 90vw 270vh 2px 1px white;
+            animation: twinkle 3s infinite, moveStars 20s linear infinite;
+        }
+
+    @keyframes twinkle {
+        0% {
+            opacity: 0.2;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0.2;
+        }
+    }
+
+    @keyframes moveStars {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        25% {
+            transform: translate(50px, 30px);
+        }
+
+        50% {
+            transform: translate(0, 60px);
+        }
+
+        75% {
+            transform: translate(-50px, 30px);
+        }
+
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+
+    /* Luxury Title with Golden-Lavender Animation */
+    .luxury-title {
+        background: linear-gradient(135deg, #D4AF37 0%, #A87BFF 50%, #D4AF37 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 0 0 15px rgba(168, 123, 255, 0.3);
+        font-weight: 700;
+        letter-spacing: 1px;
+        background-size: 200% auto;
+        display: inline-block;
+        transition: all 0.5s ease;
+    }
+
+        .luxury-title:hover {
+            background-position: 100% center;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+            transform: scale(1.03);
+        }
+
+    .luxury-divider {
+        width: 150px;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, #D4AF37, #A87BFF, transparent);
+        margin: 1.5rem auto;
+        border-radius: 3px;
+        transition: all 0.5s ease;
+    }
+
+    .section-title:hover .luxury-divider {
+        width: 200px;
+        background: linear-gradient(90deg, transparent, #A87BFF, #D4AF37, transparent);
+    }
+
+    /* Filter Buttons */
+    .filter-buttons {
+        position: relative;
+        z-index: 1;
+    }
+
+        .filter-buttons li {
+            display: inline-block;
+            padding: 8px 20px;
+            margin: 0 5px;
+            color: #b0b8c5;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 30px;
+            background: rgba(15, 25, 40, 0.7);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            transition: all 0.3s ease;
+        }
+
+            .filter-buttons li.active,
+            .filter-buttons li:hover {
+                color: white;
+                background: linear-gradient(135deg, rgba(212, 175, 55, 0.3) 0%, rgba(168, 123, 255, 0.3) 100%);
+                border-color: rgba(212, 175, 55, 0.3);
+                transform: translateY(-3px);
+                box-shadow: 0 5px 15px rgba(168, 123, 255, 0.2);
+            }
+
+    /* Project Cards */
+    .luxury-project-card {
+        background: rgba(15, 25, 40, 0.7);
+        border: 1px solid rgba(212, 175, 55, 0.1);
+        border-radius: 12px;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        height: 100%;
+    }
+
+        .luxury-project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(168, 123, 255, 0.2);
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+
+    .project-img-container {
+        position: relative;
+        height: 280px;
+        overflow: hidden;
+    }
+
+        .project-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.5s ease;
+        }
+
+    .luxury-project-card:hover .project-img-container img {
+        transform: scale(1.05);
+    }
+
+    .project-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        transition: all 0.5s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .luxury-project-card:hover .project-overlay {
+        opacity: 1;
+    }
+
+    .project-content .btn {
+        background: rgba(212, 175, 55, 0.7);
+        color: white;
+        margin: 0 10px;
+        transition: all 0.3s ease;
+    }
+
+        .project-content .btn:hover {
+            background: #a87bff;
+            transform: translateY(-3px);
+        }
+
+    .color-wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, #d4af37, #a87bff, #d4af37);
+        background-size: 200% auto;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 0.5s ease;
+    }
+
+    .luxury-project-card:hover .color-wave {
+        transform: scaleX(1);
+        background-position: 100% center;
+    }
+
+    .project-info {
+        padding: 20px;
+        background: rgba(10, 20, 35, 0.8);
+    }
+
+    .project-category {
+        color: #a87bff;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .project-title {
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+
+    /* Ensure content stays above background elements */
+    .container-xxl {
+        position: relative;
+        z-index: 1;
+    }
+</style>
+<!-- Quote Start -->
+<!-- Enquiry Section Start -->
+<section id="enquiry" class="container-fluid mt-0 mb-0 px-0">
+    <div class="row g-0">
+
+
+        <!-- Right Half: Form with background -->
+        <div class="enquiry-form-container">
+            <!-- Enhanced Starfield Animation -->
+            <div class="starfield">
+                <div class="stars-layer layer-1"></div>
+                <div class="stars-layer layer-2"></div>
+                <div class="stars-layer layer-3"></div>
+                <div class="stars-layer layer-4"></div>
+            </div>
+
+            <div class="enquiry-form-wrapper">
+                <div class="enquiry-form animate__animated animate__fadeInRight">
+                    <div class="form-header">
+                        <div class="form-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <h2 class="form-title">Contact Our Team</h2>
+                        <p class="form-subtitle">Let's discuss how we can help your business grow</p>
+                    </div>
+
+                    <form action="https://formsubmit.co/prod@BharatCrest.com" method="POST"target="_blank" 
+                    class="premium-form">
+                        <input type="hidden" name="csrfmiddlewaretoken" value="eodNGOb48rIfxJ1dysI3u17JyqvBVAc6AVC7GfEVpZDB2IyBP2fuyEOA8L4xBHdI">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <div class="input-container">
+                                    <input type="text" id="name" name="name" class="form-input" placeholder=" " required>
+                                    <label for="name" class="form-label">&nbsp;Full Name</label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-container">
+                                    <input type="email" id="email" name="email" class="form-input" placeholder=" " required>
+                                    <label for="email" class="form-label">&nbsp;Email Address</label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-container">
+                                <input type="text" id="subject" name="subject" class="form-input" placeholder=" " required>
+                                <label for="subject" class="form-label">&nbsp;Subject</label>
+                                <div class="input-border"></div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <div class="input-container textarea-container">
+                                <textarea id="message" name="message" class="form-input" rows="5" placeholder=" " required></textarea>
+                                <label for="message" class="form-label">&nbsp;Your Message</label>
+                                <div class="input-border"></div>
+                            </div>
+                        </div>
+
+                         <!-- Add a hidden input field for redirecting to your site -->
+                        <input type="hidden" name="_next" value="https://www.BharatCrest.com/">
+
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Send Enquiry</span>
+                            <span class="btn-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            /* Base Styles */
+            .enquiry-form-container {
+                background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+                padding: 5rem 1rem;
+                position: relative;
+                overflow: hidden;
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            /* Enhanced Starfield Animation */
+            .starfield {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+                overflow: hidden;
+            }
+
+            .stars-layer {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: transparent;
+            }
+
+            .layer-1::before {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                background: rgba(255, 255, 255, 0.8);
+                border-radius: 50%;
+                box-shadow: 5vw 10vh 0 0 rgba(255, 255, 255, 0.9), 15vw 25vh 0 0 rgba(255, 255, 255, 0.7), 25vw 40vh 0 0 rgba(255, 255, 255, 0.6), 35vw 15vh 0 0 rgba(255, 255, 255, 0.5), 45vw 30vh 0 0 rgba(255, 255, 255, 0.4), 55vw 45vh 0 0 rgba(255, 255, 255, 0.3), 65vw 20vh 0 0 rgba(255, 255, 255, 0.2), 75vw 35vh 0 0 rgba(255, 255, 255, 0.1), 85vw 50vh 0 0 rgba(255, 255, 255, 0.05), 95vw 25vh 0 0 rgba(255, 255, 255, 0.03);
+                animation: float 150s linear infinite;
+            }
+
+            .layer-2::before {
+                content: "";
+                position: absolute;
+                width: 2px;
+                height: 2px;
+                background: rgba(255, 255, 255, 0.6);
+                border-radius: 50%;
+                box-shadow: 10vw 15vh 0 0 rgba(255, 255, 255, 0.7), 20vw 30vh 0 0 rgba(255, 255, 255, 0.6), 30vw 45vh 0 0 rgba(255, 255, 255, 0.5), 40vw 10vh 0 0 rgba(255, 255, 255, 0.4), 50vw 25vh 0 0 rgba(255, 255, 255, 0.3), 60vw 40vh 0 0 rgba(255, 255, 255, 0.2), 70vw 15vh 0 0 rgba(255, 255, 255, 0.1), 80vw 30vh 0 0 rgba(255, 255, 255, 0.05), 90vw 45vh 0 0 rgba(255, 255, 255, 0.03);
+                animation: float 120s linear infinite reverse;
+            }
+
+            .layer-3::before {
+                content: "";
+                position: absolute;
+                width: 3px;
+                height: 3px;
+                background: rgba(212, 175, 55, 0.4);
+                border-radius: 50%;
+                box-shadow: 7vw 12vh 0 0 rgba(212, 175, 55, 0.5), 17vw 27vh 0 0 rgba(212, 175, 55, 0.4), 27vw 42h 0 0 rgba(212, 175, 55, 0.3), 37vw 17vh 0 0 rgba(212, 175, 55, 0.2), 47vw 32vh 0 0 rgba(212, 175, 55, 0.1), 57vw 47vh 0 0 rgba(212, 175, 55, 0.05);
+                animation: float 180s linear infinite;
+                opacity: 0.7;
+            }
+
+            .layer-4::before {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                background: rgba(212, 175, 55, 0.3);
+                border-radius: 50%;
+                box-shadow: 3vw 8vh 0 0 rgba(212, 175, 55, 0.4), 13vw 23vh 0 0 rgba(212, 175, 55, 0.3), 23vw 38vh 0 0 rgba(212, 175, 55, 0.2), 33vw 13vh 0 0 rgba(212, 175, 55, 0.1), 43vw 28vh 0 0 rgba(212, 175, 55, 0.05);
+                animation: float 200s linear infinite reverse;
+                opacity: 0.5;
+            }
+
+            @keyframes float {
+                0% {
+                    transform: translate(0, 0);
+                }
+
+                100% {
+                    transform: translate(-100vw, -100vh);
+                }
+            }
+
+            /* Wider Form Container */
+            .enquiry-form-wrapper {
+                width: 100%;
+                max-width: 800px;
+                margin: 0 auto;
+                position: relative;
+                z-index: 1;
+            }
+
+            /* Metallic Slate Form Design */
+            .enquiry-form {
+                background: linear-gradient(145deg, #2a2a2a 0%, #1e1e1e 100%);
+                border: 1px solid rgba(212, 175, 55, 0.2);
+                border-radius: 16px;
+                padding: 3rem;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.1), inset 0 -1px 1px rgba(0, 0, 0, 0.5);
+                position: relative;
+                overflow: hidden;
+            }
+
+                .enquiry-form::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient( 135deg, rgba(212, 175, 55, 0.03) 0%, rgba(212, 175, 55, 0) 20%, rgba(212, 175, 55, 0) 80%, rgba(212, 175, 55, 0.03) 100% );
+                    pointer-events: none;
+                }
+
+                .enquiry-form::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none" stroke="rgba(212, 175, 55, 0.05)" stroke-width="0.5"/></svg>');
+                    opacity: 0.3;
+                    pointer-events: none;
+                }
+
+            /* Form Header */
+            .form-header {
+                text-align: center;
+                margin-bottom: 3rem;
+                position: relative;
+            }
+
+            .form-icon {
+                width: 70px;
+                height: 70px;
+                margin: 0 auto 1.8rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(145deg, #3a3a3a, #2a2a2a);
+                border-radius: 50%;
+                border: 1px solid rgba(212, 175, 55, 0.3);
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+                transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            }
+
+                .form-icon svg {
+                    width: 32px;
+                    height: 32px;
+                    color: #d4af37;
+                    filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.5));
+                    transition: all 0.3s ease;
+                }
+
+            .form-title {
+                color: #ffffff;
+                font-size: 2.2rem;
+                font-weight: 600;
+                margin: 0.5rem 0;
+                letter-spacing: 0.5px;
+                font-family: 'Montserrat', sans-serif;
+                line-height: 1.3;
+                text-shadow: 0 0 2px #FFD700, /* soft glow */
+                0 0 5px #FFD700, /* extended glow */
+                1px 1px 0 #FFD700, /* golden edge bottom-right */
+                -1px -1px 0 #FFD700, /* golden edge top-left */
+                1px -1px 0 #FFD700, -1px 1px 0 #FFD700;
+            }
+
+            .form-subtitle {
+                color: whitesmoke;
+                font-size: 1.05rem;
+                letter-spacing: 0.5px;
+                font-weight: 300;
+                margin: 0;
+                line-height: 1.6;
+            }
+
+            /* Form Layout */
+            .form-row {
+                display: flex;
+                gap: 2rem;
+                margin-bottom: 1.8rem;
+            }
+
+            .form-group {
+                flex: 1;
+                position: relative;
+            }
+
+            /* Input Styles */
+            .input-container {
+                position: relative;
+            }
+            /* Input field */
+            .form-input {
+                width: 100%;
+                padding: 1.2rem 0.75rem 0.5rem; /* top space for floating label */
+                border: 1px solid #ccc;
+                border-radius: 0.375rem;
+                background-color: transparent;
+                color: white;
+                font-size: 1rem;
+                outline: none;
+                transition: border-color 0.3s;
+            }
+
+                .form-input::placeholder {
+                    color: transparent; /* hides the placeholder text */
+                }
+
+            /* Label styling */
+            .form-label {
+                position: absolute;
+                left: 0.75rem;
+                top: 1rem;
+                color: #eab308; /* amber-500 */
+                font-size: 1rem;
+                pointer-events: none;
+                transition: all 0.2s ease-out;
+            }
+
+            /* When input is focused OR has content */
+            .form-input:focus + .form-label,
+            .form-input:not(:placeholder-shown) + .form-label {
+                top: 0.25rem;
+                left: 0.5rem;
+                font-size: 0.75rem;
+                color: #facc15; /* amber-400 */
+            }
+
+            /* Highlight border on focus */
+            .form-input:focus {
+                border-color: #facc15;
+            }
+
+            .textarea-container .form-input {
+                resize: none;
+                min-height: 140px;
+            }
+
+            .form-label {
+                position: absolute;
+                top: 1.2rem;
+                left: 0;
+                color: #b0b0b0;
+                font-size: 1rem;
+                font-weight: 300;
+                pointer-events: none;
+                transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+                transform-origin: left center;
+            }
+
+            .input-border {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background: linear-gradient(90deg, #d4af37, #f0e6b4);
+                transition: width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            }
+
+            .form-input:focus ~ .input-border {
+                width: 100%;
+            }
+
+            /* Submit Button (unchanged as requested) */
+            .submit-btn {
+                width: 100%;
+                padding: 1.1rem;
+                background: linear-gradient(135deg, rgba(26, 26, 26, 0.9) 0%, rgba(10, 10, 10, 0.9) 100%);
+                color: #d4af37;
+                border: 1px solid rgba(212, 175, 55, 0.3);
+                border-radius: 8px;
+                font-size: 0.95rem;
+                font-weight: 500;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.75rem;
+                cursor: pointer;
+                transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+                position: relative;
+                overflow: hidden;
+                margin-top: 1rem;
+            }
+
+                .submit-btn::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.15), transparent);
+                    transition: all 0.8s ease;
+                }
+
+                .submit-btn:hover {
+                    background: linear-gradient(135deg, rgba(10, 10, 10, 0.9) 0%, rgba(26, 26, 26, 0.9) 100%);
+                    border-color: rgba(212, 175, 55, 0.6);
+                    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+                    transform: translateY(-2px);
+                }
+
+                    .submit-btn:hover::before {
+                        left: 100%;
+                    }
+
+            .btn-text {
+                position: relative;
+                z-index: 1;
+            }
+
+            .btn-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            }
+
+            .submit-btn:hover .btn-icon {
+                transform: translateX(5px);
+            }
+
+            .submit-btn svg {
+                width: 16px;
+                height: 16px;
+            }
+
+            /* Responsive Adjustments */
+            @media (max-width: 992px) {
+                .enquiry-form-wrapper {
+                    max-width: 700px;
+                }
+
+                .enquiry-form {
+                    padding: 2.5rem;
+                }
+
+                .form-row {
+                    gap: 1.5rem;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .enquiry-form-wrapper {
+                    max-width: 600px;
+                }
+
+                .enquiry-form {
+                    padding: 2rem;
+                }
+
+                .form-row {
+                    flex-direction: column;
+                    gap: 1.8rem;
+                }
+
+                .form-title {
+                    font-size: 1.8rem;
+                }
+
+                .form-icon {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+
+            @media (max-width: 576px) {
+                .enquiry-form {
+                    padding: 1.75rem;
+                }
+
+                .form-title {
+                    font-size: 1.5rem;
+                }
+
+                .form-subtitle {
+                    font-size: 0.95rem;
+                }
+
+                .form-input {
+                    padding: 1rem 1rem 1rem 0;
+                }
+            }
+        </style>
+</section>
+
+<!-- Enquiry Section End -->
+<div id="elite-team" class="elite-team-section">
+    <div class="elite-team-container">
+        <div class="elite-team-header">
+            <h1 class="elite-team-title">OUR ELITE TEAM</h1>
+            <div class="title-divider"></div>
+        </div>
+
+        <div class="elite-team-grid">
+            <!-- Team Member 1 -->
+            <div class="elite-team-card">
+                <div class="team-card-inner">
+                    <div class="team-card-front">
+                        <div class="member-image-container">
+                            <img src="img/prakhar.jpeg" alt="Prakhar Gupta" class="member-image">
+                            <div class="image-glow"></div>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Prakhar Gupta</h3>
+                            <p class="member-title">Founder</p>
+                        </div>
+                    </div>
+                    <div class="team-card-back">
+                        <div class="social-links">
+                            <a href="mailto:gupta.prakhar2000@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                            <a href="https://www.linkedin.com/in/prakhar-gupta-3b368868/" class="social-link"><i class="fa-brands fa-linkedin-square"></i></a>
+                            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <div class="member-bio">
+                            <p>Visionary leader with expertise in digital transformation and strategic growth.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-glow"></div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="elite-team-card">
+                <div class="team-card-inner">
+                    <div class="team-card-front">
+                        <div class="member-image-container">
+                            <img src="img/manish.jpeg" alt="Manish Gaur" class="member-image">
+                            <div class="image-glow"></div>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Manish Gaur</h3>
+                            <p class="member-title">Investment & Trading Expert</p>
+                        </div>
+                    </div>
+                    <div class="team-card-back">
+                        <div class="social-links">
+                            <a href="mailto:manishgaur667@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                            <a href="https://www.linkedin.com/in/manish-gaur-288780230/" class="social-link"><i class="fa-brands fa-linkedin-square"></i></a>
+                            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <div class="member-bio">
+                            <p>Financial strategist with a decade of experience in global markets.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-glow"></div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="elite-team-card">
+                <div class="team-card-inner">
+                    <div class="team-card-front">
+                        <div class="member-image-container">
+                            <img src="img/himanshu.jpeg" alt="Himanshu Sharma" class="member-image">
+                            <div class="image-glow"></div>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Himanshu Sharma</h3>
+                            <p class="member-title">Lead Developer</p>
+                        </div>
+                    </div>
+                    <div class="team-card-back">
+                        <div class="social-links">
+                            <a href="mailto:prod@BharatCrest.com" class="social-link"><i class="fas fa-envelope">
+                                
+                            </i></a>
+                            <a href="https://www.linkedin.com/in/himanshu-sharma-023233202/" class="social-link"><i class="fa-brands fa-linkedin-square"></i></a>
+                            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <div class="member-bio">
+                            <p>Tech innovator specializing in AI-driven solutions and architecture.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-glow"></div>
+            </div>
+        </div>
+    </div>
+    <div class="background-particles"></div>
+</div>
+
+    
+
+<style>
+    /* Base Styles */
+    .elite-team-section {
+        position: relative;
+        padding: 120px 0;
+        background: linear-gradient(135deg, #1a1d2e 0%, #0e1120 100%);
+        overflow: hidden;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .background-particles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle at 20% 30%, rgba(30, 144, 255, 0.03) 0%, transparent 25%), radial-gradient(circle at 80% 70%, rgba(30, 144, 255, 0.03) 0%, transparent 25%);
+        animation: particleMove 20s infinite alternate;
+        z-index: 0;
+    }
+
+    @keyframes particleMove {
+        0% {
+            background-position: 0% 0%;
+        }
+
+        100% {
+            background-position: 100% 100%;
+        }
+    }
+
+    .elite-team-container {
+        position: relative;
+        z-index: 2;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    /* Header Styles */
+    .elite-team-header {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .elite-team-title {
+        font-size: 3.5rem;
+        font-weight: 800;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: transparent;
+        background: linear-gradient(to right, #d4af37, #f9f295, #d4af37);
+        -webkit-background-clip: text;
+        background-clip: text;
+        text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+        margin-bottom: 20px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .title-divider {
+        width: 150px;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, #d4af37, transparent);
+        margin: 0 auto;
+        position: relative;
+    }
+
+        .title-divider::after {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 10px;
+            height: 10px;
+            background: #d4af37;
+            border-radius: 50%;
+            box-shadow: 0 0 15px #d4af37;
+        }
+
+    /* Team Grid Layout */
+    .elite-team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    /* Team Card Styles */
+    .elite-team-card {
+        position: relative;
+        perspective: 1000px;
+        height: 420px;
+        width: 100%;
+        display: flex;
+    }
+    .team-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.8s ease;
+        transform-style: preserve-3d;
+    }
+
+    .elite-team-card:hover .team-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .team-card-front, .team-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background: rgba(30, 35, 50, 0.7);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(212, 175, 55, 0.2);
+        overflow: hidden;
+    }
+
+    .team-card-front {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+    }
+
+    .team-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: linear-gradient(135deg, rgba(20, 25, 45, 0.9) 0%, rgba(10, 15, 30, 0.9) 100%);
+    }
+
+    /* Card Glow Effect */
+    .card-glow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        background: linear-gradient(45deg, rgba(30, 144, 255, 0.1), transparent, rgba(212, 175, 55, 0.1));
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        z-index: -1;
+    }
+
+    .elite-team-card:hover .card-glow {
+        opacity: 1;
+        animation: glowPulse 3s infinite alternate;
+    }
+
+    @keyframes glowPulse {
+        0% {
+            box-shadow: 0 0 15px rgba(30, 144, 255, 0.3);
+        }
+
+        100% {
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+        }
+    }
+
+    /* Member Image Styles */
+    .member-image-container {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 30px;
+        overflow: hidden;
+        border: 3px solid rgba(212, 175, 55, 0.3);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .member-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.5s ease;
+    }
+
+    .image-glow {
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        right: -3px;
+        bottom: -3px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        transition: all 0.5s ease;
+    }
+
+    .elite-team-card:hover .member-image {
+        transform: scale(1.05);
+    }
+
+    .elite-team-card:hover .image-glow {
+        border-color: rgba(30, 144, 255, 0.7);
+        box-shadow: 0 0 30px rgba(30, 144, 255, 0.5);
+    }
+
+    /* Member Info Styles */
+    .member-info {
+        text-align: center;
+    }
+
+    .member-name {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 5px;
+        letter-spacing: 1px;
+    }
+
+    .member-title {
+        font-size: 1rem;
+        color: #d4af37;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    /* Back Card Styles */
+    .social-links {
+        pointer-events: auto !important;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    .social-link {
+        pointer-events: auto !important;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(30, 144, 255, 0.1);
+        border: 1px solid rgba(30, 144, 255, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #d4af37;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+    }
+
+        .social-link:hover {
+            background: rgba(30, 144, 255, 0.3);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(30, 144, 255, 0.2);
+        }
+
+    .member-bio {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 0.95rem;
+        line-height: 1.6;
+        text-align: center;
+        font-weight: 300;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 992px) {
+        .elite-team-title {
+            font-size: 2.5rem;
+        }
+
+        .elite-team-grid {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+    }
+
+    @media (max-width: 768px) {
+        .elite-team-section {
+            padding: 80px 0;
+        }
+
+        .elite-team-title {
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+
+        .member-image-container {
+            width: 180px;
+            height: 180px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .elite-team-title {
+            font-size: 1.8rem;
+        }
+
+        .elite-team-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+    /* White, Black, Grey & Navy Blue Theme */
+    .team-section {
+        background: #ffffff;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .team-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 30%, rgba(0, 34, 68, 0.03) 0%, transparent 25%), radial-gradient(circle at 80% 70%, rgba(0, 34, 68, 0.03) 0%, transparent 25%);
+            background-size: 200% 200%;
+            z-index: 0;
+            animation: silkShimmer 15s infinite alternate;
+        }
+
+    @keyframes silkShimmer {
+        0% {
+            background-position: 0% 0%;
+        }
+
+        100% {
+            background-position: 100% 100%;
+        }
+    }
+
+    /* Maintain the golden "Our Elite Team" text */
+    .gold-text {
+        background: linear-gradient(to right, #b2973a, #d4c075, #b2973a);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 0 0 10px rgba(178, 151, 58, 0.2);
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .gold-divider {
+        width: 100px;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #b2973a, transparent);
+        margin: 1rem auto 2rem;
+    }
+
+    /* New color scheme elements */
+    .team-item {
+        background: #fff;
+        border: 1px solid rgba(0, 34, 68, 0.1);
+        border-radius: 5px;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+        .team-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 34, 68, 0.1);
+            border-color: rgba(0, 34, 68, 0.2);
+        }
+
+    .team-img-container {
+        position: relative;
+    }
+
+    .blue-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, transparent 60%, rgba(0, 34, 68, 0.05));
+        transition: all 0.5s ease;
+    }
+
+    .team-item:hover .blue-overlay {
+        background: linear-gradient(to bottom, transparent 30%, rgba(0, 34, 68, 0.1));
+    }
+
+    .team-info {
+        background: #f8f9fa;
+        position: relative;
+    }
+
+    .white-text {
+        color: #002244;
+        font-weight: 600;
+    }
+
+    .grey-subtext {
+        color: #6c757d;
+        font-size: 0.85rem;
+        letter-spacing: 0.5px;
+    }
+
+    .blue-line {
+        width: 0;
+        height: 2px;
+        background: #002244;
+        margin: 0.5rem auto 0;
+        transition: all 0.5s ease;
+    }
+
+    .team-item:hover .blue-line {
+        width: 50px;
+    }
+
+    .team-social {
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        transition: all 0.5s ease;
+        z-index: 3;
+    }
+
+    .team-item:hover .team-social {
+        bottom: 20px;
+    }
+
+    .blue-social {
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid rgba(0, 34, 68, 0.2);
+        color: #002244 !important;
+        margin: 0 5px;
+        transition: all 0.3s ease;
+    }
+
+        .blue-social:hover {
+            background: #002244 !important;
+            color: #fff !important;
+            transform: translateY(-3px);
+        }
+
+    /* Navy Blue Flow Effect on Hover */
+    .team-item::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient( 135deg, rgba(0, 34, 68, 0) 0%, rgba(0, 34, 68, 0) 40%, rgba(0, 34, 68, 0.05) 50%, rgba(0, 34, 68, 0) 60%, rgba(0, 34, 68, 0) 100% );
+        background-size: 300% 300%;
+        z-index: 2;
+        opacity: 0;
+        transition: all 0.7s ease;
+    }
+
+    .team-item:hover::after {
+        opacity: 1;
+        background-position: 100% 100%;
+    }
+</style>
+<!-- Team End -->
+<!-- Testimonial Start -->
+<style>
+    /* Background and layout */
+    .testimonial-section {
+        background: linear-gradient(135deg, #0a0f3d, #1f2a70);
+        padding: 100px 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .section-title h1 {
+        color: #ffffff;
+        font-size: 3rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+
+    /* Testimonial card */
+    .testimonial-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 30px;
+        border-radius: 20px;
+        transition: all 0.5s ease;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(9, 20, 50, 0.5);
+    }
+
+        /* Hover effect with slow glow */
+        .testimonial-card:hover {
+            border: 1px solid rgba(0, 132, 255, 0.5);
+            box-shadow: 0 0 30px rgba(0, 132, 255, 0.6);
+            transform: translateY(-8px);
+        }
+
+        /* Glowing border animation */
+        .testimonial-card::before {
+            content: "";
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(120deg, #0051ff, #00c8ff, #0051ff);
+            background-size: 400% 400%;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            z-index: 0;
+            border-radius: 20px;
+            animation: gradientGlow 8s ease infinite;
+        }
+
+        .testimonial-card:hover::before {
+            opacity: 1;
+        }
+
+    @keyframes gradientGlow {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    /* Inner content */
+    .testimonial-card .img-fluid {
+        border-radius: 50%;
+        border: 2px solid #1f3b93;
+        padding: 5px;
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-text {
+        position: relative;
+        z-index: 1;
+        color: #dfe9ff;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .testimonial-name {
+        color: #ffffff;
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+    .testimonial-profession {
+        font-style: italic;
+        color: #a3b4ff;
+        font-size: 0.9rem;
+    }
+</style>
+
+<!-- Main Testimonial Section -->
+<style>
+    /* Background and layout */
+    .testimonial-section {
+        background: linear-gradient(135deg, #0a0f3d, #1f2a70);
+        padding: 100px 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+        /* Floating stars background */
+        .testimonial-section::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png');
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+    .section-title h1 {
+        color: #ffffff;
+        font-size: 3rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+
+    /* Testimonial card */
+    .testimonial-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 30px;
+        border-radius: 20px;
+        transition: all 0.5s ease;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(9, 20, 50, 0.5);
+        z-index: 1;
+    }
+
+        .testimonial-card:hover {
+            border: 1px solid rgba(0, 132, 255, 0.5);
+            box-shadow: 0 0 30px rgba(0, 132, 255, 0.6);
+            transform: translateY(-8px);
+        }
+
+        /* Glowing border animation */
+        .testimonial-card::before {
+            content: "";
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(120deg, #0051ff, #00c8ff, #0051ff);
+            background-size: 400% 400%;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            z-index: -1;
+            border-radius: 20px;
+            animation: gradientGlow 8s ease infinite;
+        }
+
+        .testimonial-card:hover::before {
+            opacity: 1;
+        }
+
+    @keyframes gradientGlow {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    /* Inner content */
+    .testimonial-card .img-fluid {
+        border-radius: 50%;
+        border: 2px solid #1f3b93;
+        padding: 5px;
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-text {
+        position: relative;
+        z-index: 2;
+        color: #dfe9ff;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .testimonial-name {
+        color: #ffffff;
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+    .testimonial-profession {
+        font-style: italic;
+        color: #a3b4ff;
+        font-size: 0.9rem;
+    }
+</style>
+
+<!-- Main Testimonial Section -->
+<div class="testimonial-section">
+    <div class="container">
+        <div class="section-title text-center">
+            <h1>Testimonials</h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="testimonial-card text-center">
+                    <img class="img-fluid" src="img/raj.jpg" alt="Client 1">
+                    <div class="testimonial-text">
+                        <p>"Absolutely phenomenal service. It felt like stepping into the future of technology."</p>
+                        <div class="testimonial-name">Raj Abhishek Sharma</div>
+                        <div class="testimonial-profession">Founder Finex Advisors</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="testimonial-card text-center">
+                    <img class="img-fluid" src="img/prince.jpg" alt="Client 2">
+                    <div class="testimonial-text">
+                        <p>"A luxurious and futuristic experience which ensures precision – every detail was crafted with perfection."</p>
+                        <div class="testimonial-name">Prince Pathak</div>
+                        <div class="testimonial-profession">Founder HouseMonks</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="testimonial-card text-center">
+                    <img class="img-fluid" src="img/anshul.jpg" alt="Client 3">
+                    <div class="testimonial-text">
+                        <p>"Elegance meets innovation. This is how high-end AI integrated websites should feel like."</p>
+                        <div class="testimonial-name">Anshul Kumar</div>
+                        <div class="testimonial-profession">Editting Lead BrandingHunks </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Testimonial End -->
+<!--first footer -->
+<footer class="bg-light text-black py-5">
+    <div class="container" id="footer">
+        <div class="row">
+            <!-- Contact Information -->
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                <h4>Contact Us</h4>
+                <strong>Phone:</strong> +91 8171772075<br>
+                <strong>Email:</strong><a href="#"> prod@BharatCrest.com</a><br>
+                <strong>Address:</strong><br> <a href="#">Antriksh Golf City, Sec-150, Noida</a><br>
+                <a href="#"> Indirapuram, Ghaziabaad</a><br>
+                <a href="#"> 4-D, Emoriaas Town Plaza, Indore</a>
+            </div>
+
+            <!-- Map Embed -->
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                <h4>Our Location</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3508.6462981700993!2d77.47716257428479!3d28.429927693254538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x390cc1b8859dc431%3A0xdf1861c343cf3ae3!2sCFHG%2BMH2%20Antriksh%20Golf%20city%2C%20sector%20150%2C%20Noida%20%2C%20UP%20201310%2C%20150%2C%20Sector%20150%2C%20Noida%2C%20Uttar%20Pradesh%20201310%2C%20India!3m2!1d28.429923!2d77.4797375!5e0!3m2!1sen!2sus!4v1741735711553!5m2!1sen!2sus" width="250" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook" style="font-size:36px;color:blue;"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter" style="font-size:36px;color:orangered;"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-square" style="font-size:36px;color: #00acee;"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram" style="font-size:36px;color:rgb(251, 57, 88);"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube" style="font-size:36px;color:red;"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp" style="font-size:36px;color:steelblue;"></i></a>
+
+                </div>
+
+            </div>
+            <p>&copy; 2025 Our Professional Portfolio. All rights reserved.</p>
+        </div>
+
+    </div>
+</footer>
+
+
+
+<!-- Footer End -->
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+<!-- jQuery (Required for Owl Carousel) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Link to Your main.js -->
+<script src="js/main.js"></script>
+
+<!-- for slider  -->
+<!-- jQuery (required for Owl Carousel) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        const owl = $(".hero-carousel");
+
+        owl.owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            dotsContainer: '.custom-dot-container',
+            nav: false,
+            dots: true
+        });
+
+        // Custom Nav Clicks
+        $('.custom-nav-container .owl-prev').click(function () {
+            owl.trigger('prev.owl.carousel');
+        });
+
+        $('.custom-nav-container .owl-next').click(function () {
+            owl.trigger('next.owl.carousel');
+        });
+    });
+</script>
+
+
+<script>
+    // Add this script right before closing </body> tag
+    document.addEventListener('DOMContentLoaded', function () {
+        // Mobile menu close on click
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        const navLinks = document.querySelectorAll('.nav-item.nav-link');
+
+        navLinks.forEach(function (navLink) {
+            navLink.addEventListener('click', function () {
+                // Only close if it's mobile view (navbar is expanded)
+                if (navbarToggler && !navbarToggler.classList.contains('collapsed')) {
+                    // Use Bootstrap's collapse method
+                    const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                        toggle: false
+                    });
+                    bsCollapse.hide();
+                }
+            });
+        });
+    });
+</script>
+</body>
+
+</html>
